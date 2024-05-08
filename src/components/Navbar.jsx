@@ -21,9 +21,13 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className='text-white text-[18px] font-bold cursor-pointer'>Matthew Lim <span className='sm:block hidden '> </span>| Full-Stack Developer</p>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+            Matthew Lim &nbsp;
+            <span className='sm:block hidden'> | Full-Stack Developer</span>
+          </p>
         </Link>
-        <ul className='list-none hidden sm:flex-row gap-10'>
+
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -38,7 +42,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className='small:hidden flex flex-1 justify-end items-center'>
+        <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt="menu"
