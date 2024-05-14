@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  ruby,
 } from "../assets";
 
 export const navLinks = [
@@ -55,7 +56,7 @@ const services = [
   },
   {
     title: "Rubyist",
-    icon: creator,
+    icon: ruby,
   },
 ];
 
