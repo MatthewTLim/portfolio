@@ -4,21 +4,13 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -27,7 +19,11 @@ import {
   heineken,
   glee,
   turing,
-  designdata
+  designdata,
+  rails,
+  postgres,
+  postman,
+
 } from "../assets";
 
 export const navLinks = [
@@ -51,55 +47,55 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Rails Developer",
+    icon: creator,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Rubyist",
-    icon: ruby,
+    title: "React Native Developer",
+    icon: mobile,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "Ruby",
+    icon: ruby,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "PostGreSQL",
+    icon: postgres,
+  },
+  {
+    name: "Rails",
+    icon: rails,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
   {
     name: "Three JS",
@@ -110,12 +106,12 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "PostMan",
+    icon: postman,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "figma",
+    icon: figma,
   },
 ];
 

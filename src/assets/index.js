@@ -1,9 +1,5 @@
 import logo from "./logo.svg";
 import ruby from "./ruby_icon.svg"
-import designdata from "./company/designdata_logo.svg"
-import glee from "./company/glee_logo.svg"
-import heineken from "./company/heineken_logo.svg"
-import turing from "./company/turing_icon.svg"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -12,24 +8,23 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import postgres from "./tech/postgres_icon.svg";
+import postman from "./tech/postman_icon.svg";
+import javascript from "./tech/javascript.png";
+import rails from "./tech/rails_icon.svg";
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import designdata from "./company/designdata_logo.svg"
+import heineken from "./company/heineken_logo.svg"
+import turing from "./company/turing_icon.svg"
+import glee from "./company/glee_logo.svg"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -45,22 +40,14 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
   javascript,
-  mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
@@ -69,4 +56,7 @@ export {
   turing,
   glee,
   designdata,
+  rails,
+  postgres,
+  postman
 };
