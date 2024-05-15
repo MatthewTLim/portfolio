@@ -24,6 +24,10 @@ import {
   tripguide,
   threejs,
   ruby,
+  heineken,
+  glee,
+  turing,
+  designdata
 } from "../assets";
 
 export const navLinks = [
@@ -117,24 +121,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Student",
+    company_name: "Turing School of Software and Design",
+    icon: turing,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2023 - January 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Used Ruby on Rails to create full-stack applications and APIs.",
+      "Designed and created APIs with a focus on creating seamless integrations and user experiences.",
+      "Independently learned and incorporated additional techs such as GraphQL, Google oAuth, Heroku, CircleCI, Locust, Redis, and Sidekiq.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "End User Support Engineer",
+    company_name: "designDATA",
+    icon: designdata,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2021 - 2022",
+    points: [
+      "Consistently achieved a 95% first-call resolution rate.",
+      "Resolved an average of 30 application and systems access issues daily.",
+      "Played a key role in reducing the average resolution time by 20% by improving documentation.",
+      "Maintained a 98% positive feedback rating from clients.",
+    ],
+  },
+  {
+    title: "Graphic Designer",
+    company_name: "Glee Co.",
+    icon: glee,
+    iconBg: "#E6DEDD",
+    date: "2021 - 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -143,29 +159,15 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Graphic Designer",
+    company_name: "Heineken",
+    icon: heineken,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2018 - 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed web and print assets using Adobe Illustrator, Photoshop, and InDesign",
+      "Designed client slides and presentations based on consumer habits and recycling data",
+      "Designed interactive, sustainable solutions to boost consumer recycling.",
     ],
   },
 ];

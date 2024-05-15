@@ -1,5 +1,9 @@
 import logo from "./logo.svg";
 import ruby from "./ruby_icon.svg"
+import designdata from "./company/designdata_logo.svg"
+import glee from "./company/glee_logo.svg"
+import heineken from "./company/heineken_logo.svg"
+import turing from "./company/turing_icon.svg"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -60,5 +64,9 @@ export {
   carrent,
   jobit,
   tripguide,
-  ruby
+  ruby,
+  heineken,
+  turing,
+  glee,
+  designdata,
 };
