@@ -125,7 +125,7 @@ const experiences = [
     company_name: "Turing School of Software and Design",
     icon: turing,
     iconBg: "#383E56",
-    date: "2023 - 1/1/24",
+    date: "2023 - January 2024",
     points: [
       "Used Ruby on Rails to create full-stack applications and APIs.",
       "Designed and created APIs with a focus on creating seamless integrations and user experiences.",
