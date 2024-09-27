@@ -11,9 +11,9 @@ import {
   nodejs,
   git,
   figma,
-  carrent,
-  jobit,
-  tripguide,
+  spellbinder,
+  gearup,
+  webscrape,
   threejs,
   ruby,
   heineken,
@@ -30,6 +30,10 @@ export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "work",
@@ -197,16 +201,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Spellbinder",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "SpellBinder is a Ruby on Rails app for MTG enthusiasts. It uses the Magic API with Faraday and JSONAPI, features custom endpoints, a Bootstrap frontend with CORS, Google OAuth for secure user authentication, and a scalable database for users and decks.",
     tags: [
       {
-        name: "react",
+        name: "rails",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgres",
         color: "green-text-gradient",
       },
       {
@@ -214,50 +218,50 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: spellbinder,
+    source_code_link: "https://github.com/Spell-Binder-V1/spellbinder_be",
   },
   {
-    name: "Job IT",
+    name: "Gear Up",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Gear Up leverages cloud infrastructure, secure payment APIs, real-time databases, and user authentication to enable artists to create and share projects. It supports multimedia uploads, community interactions, and seamless funding processes, ensuring a scalable and robust platform for creative collaboration.",
     tags: [
       {
-        name: "react",
+        name: "react/rails",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "graphql",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "postgres",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: gearup,
+    source_code_link: "https://github.com/orgs/gearup-2305/repositories",
   },
   {
-    name: "Trip Guide",
+    name: "Web Scraper",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Job Board includes a Ruby web scraper using Selenium, Rails API, and React frontend as Git submodules. It leverages secure APIs, real-time databases, and a modular architecture for scalable job listing collection and display. WIP.",
     tags: [
       {
-        name: "nextjs",
+        name: "ruby",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "selenium",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "postgres",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: webscrape,
+    source_code_link: "https://github.com/MatthewTLim/Job_Board",
   },
 ];
 
