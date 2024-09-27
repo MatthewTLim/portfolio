@@ -121,7 +121,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Student",
+    title: "Web Developer",
     company_name: "Turing School of Software and Design",
     icon: turing,
     iconBg: "#383E56",
