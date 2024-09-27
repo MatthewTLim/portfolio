@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
@@ -8,9 +8,37 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const navRef = useRef(null);
+
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    const navHeight = navRef.current ? navRef.current.offsetHeight : 0;
+
+    if (section) {
+
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+
+      if (id === 'contact') {
+
+        window.scrollTo({
+          top: sectionTop,
+          behavior: 'smooth',
+        });
+      } else {
+
+        window.scrollTo({
+          top: sectionTop - navHeight,
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav
+      ref={navRef}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+    >
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
         <Link
           to="/"
@@ -21,51 +49,57 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Matthew Lim &nbsp;
-            <span className='sm:block hidden'> | Full-Stack Developer</span>
+            <span className="sm:block hidden"> | Full-Stack Developer</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
-                active === link.title
-                  ? "text-white"
-                  : "text-secondary"
+                active === link.title ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => {
+                setActive(link.title);
+                handleScroll(link.id);
+              }}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link.title}
             </li>
           ))}
         </ul>
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[29px] h-[28px] object-contain cursor pointer"
+            className="w-[29px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
         </div>
-        <div className={`${!toggle ? 'hidden' :'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-          <ul className='list-none flex justify-end items-start flex-col gap-4'>
+
+        <div
+          className={`${
+            !toggle ? 'hidden' : 'flex'
+          } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+        >
+          <ul className="list-none flex justify-end items-start flex-col gap-4">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`${
-                  active === link.title
-                    ? "text-white"
-                    : "text-secondary"
+                  active === link.title ? 'text-white' : 'text-secondary'
                 } font-poppins font-medium cursor-pointer text-[16px]`}
                 onClick={() => {
                   setToggle(!toggle);
                   setActive(link.title);
+                  handleScroll(link.id); // Scroll with or without navbar height adjustment
                 }}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                {link.title}
               </li>
             ))}
           </ul>
