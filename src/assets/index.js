@@ -26,9 +26,9 @@ import heineken from "./company/heineken_logo.svg"
 import turing from "./company/turing_icon.svg"
 import glee from "./company/glee_logo.svg"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import spellbinder from "./spellbinder.png";
+import gearup from "./gearup.png";
+import webscrape from "./webscrape.png";
 
 export {
   logo,
@@ -48,9 +48,9 @@ export {
   reactjs,
   tailwind,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
+  spellbinder,
+  gearup,
+  webscrape,
   ruby,
   heineken,
   turing,
